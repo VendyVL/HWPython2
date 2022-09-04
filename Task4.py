@@ -2,14 +2,10 @@
 # Найдите произведение элементов на указанных позициях. 
 # Позиции хранятся в файле file.txt в одной строке одно число.
 with open('file.txt', 'w') as data:
- data.write('2\n')
- data.write('-3\n')
+ data.write('8\n')
+ data.write('-6\n')
 
-# Файл создаётся за пределами папки где у меня git
-
-n = int(input('Введите число N = '))
-
-if n<0: n=-n
+n = 10
 
 def numList(n):
     num_list = []
@@ -28,10 +24,11 @@ l2 = []
 i=0
 for line in d:
     l2.append(line)
+d.close
 
 a = int(l2[0])
 b = int(l2[1])
 
 res = list[a]*list[b]
 
-print (res)
+print(f"{list[a]}*{list[b]}={res}")
